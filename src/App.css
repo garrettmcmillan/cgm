@@ -1,0 +1,183 @@
+:root {
+  --primaryOrange: #fcb244;
+  --primaryGreen: #90a88e;
+  --primaryBlack: #141814;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.test {
+  border: 1px solid palegoldenrod;
+}
+
+/* NAVBAR */
+
+.navbar-div {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  color: var(--primaryBlack);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  border-right: 1rem solid var(--primaryGreen);
+}
+
+.nav-item-container {
+}
+
+.nav-hamburger {
+  color: inherit !important;
+  border: none;
+  text-decoration: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding-right: 2rem;
+  color: inherit !important;
+}
+.nav-item:hover {
+  text-decoration: none;
+  color: var(--primaryBlack);
+}
+.nav-item-link {
+}
+
+.nav-dropdown {
+  border: none;
+  background: transparent;
+}
+
+.orange-hover:hover {
+  background-color: var(--primaryOrange);
+  transition: all 0.5s ease-in-out;
+}
+
+.green-hover:hover {
+  background-color: var(--primaryGreen);
+  transition: all 0.5s ease-in-out;
+}
+
+/* HOME */
+
+.home-container {
+}
+
+.home-content-card {
+  border: none;
+  background: transparent;
+}
+
+.home-title {
+  letter-spacing: 0.2rem;
+  font-family: 'Inconsolata' monospace !important;
+  font-weight: 900 !important;
+  width: fit-content;
+  color: var(--primaryBlack);
+  font-size: 6rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.home-title-desc {
+  font-family: 'Montserrat', sans-serif !important;
+  padding-left: 5rem;
+}
+.home-card-body {
+  background-color: transparent;
+}
+
+.home-image {
+  max-width: 20rem;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 0;
+  box-shadow: 30px 30px var(--primaryOrange), -30px -30px var(--primaryGreen);
+}
+
+.home-image:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.card-content-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card-content-list li {
+}
+
+.card-content-list-item {
+  font-family: 'Montserrat', sans-serif !important;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+.orange-stripe {
+  background: var(--primaryOrange);
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  padding-top: 3.5rem;
+}
+
+.orange-stripe-list {
+  color: var(--primaryBlack) !important;
+}
+
+.orange-stripe-list:hover {
+  color: var(--primaryGreen) !important;
+  transition: all 0.5s ease-in-out;
+  border-color: transparent !important;
+}
+
+.home-card-footer {
+  position: relative;
+  border: none;
+  display: flex;
+  justify-content: end;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.icon-list {
+  position: absolute;
+  left: 0;
+}
+
+.footer-icon-list {
+  border: none;
+  background: none;
+}
+
+.footer-social-icon {
+  color: var(--primaryBlack);
+  font-size: 2rem !important;
+  border-bottom: 3px solid transparent;
+}
+
+.footer-social-icon:hover {
+  border-bottom: 3px solid var(--primaryGreen);
+}
+
+.footer-social-icon:active {
+  border-color: var(--primaryOrange);
+}
