@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class NavCollapseIcon extends React.Component { 
+export default class NavIcon extends React.Component { 
     constructor(props) {
         super(props);
         this.state = {
