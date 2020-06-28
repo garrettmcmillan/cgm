@@ -13,15 +13,18 @@ export default class Work extends Component {
         return (
             <div>
                 <Container className="home-container">
-                    <Card className="home-content-card mb-5 pb-5">
+                    <Card className="home-content-card">
                         <Card.Body className="">
-                            <Card.Title as="h1" className="home-title" >recent work</Card.Title>
-                            <Card.Title as="h2" className="home-title-desc">&mdash; available for select projects</Card.Title>
+                            <Card.Title as="h1" className="home-title" >recent <br/> work</Card.Title>
+                            <Card.Title as="h2" className="home-title-desc">&mdash; Available for Select Projects</Card.Title>
                         </Card.Body>
+                        <div className="d-flex justify-content-end align-content-end mb-5">
+                            <p className="card-line mb-5"></p>
+                        </div>
                         {work}
                     </Card>
                 </Container>
             </div>
         )
     }
-}
+} 

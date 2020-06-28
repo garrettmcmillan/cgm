@@ -6,6 +6,7 @@ import OrangeStripe from './components/OrangeStripe';
 import About from './components/About';
 import Work from './components/Work';
 import CaseStudies from './components/CaseStudies';
+import Footer from './components/Footer'
 
 
 /* CSS */
@@ -24,6 +25,8 @@ class App extends Component {
             <Route path="/studies" component={CaseStudies} />
             <Route path="/recent" component={Work} />
           </Switch>
+          <Footer/>
+
         </React.Fragment>
         
     

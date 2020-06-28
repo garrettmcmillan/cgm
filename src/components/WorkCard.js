@@ -2,92 +2,87 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import { Parallax } from 'react-parallax';
+import Footer from './Footer';
 
 
 
 
 export default class WorkCard extends Component {
     render() {
-        const { title, link, img, info, alt, code, casestudy } = this.props.project;
+        const { title, link, img, info, alt, code, casestudy, stack } = this.props.project;
+        
+        const caseStudyStatus = this.props.project.casestudy;
+        let caseStudyButton;
+        if (caseStudyStatus === null) {
+            caseStudyButton = <Button
+                                href={casestudy}
+                                target="_blank" 
+                                className="work-button d-none"
+                                variant="outline-*" 
+                                size=""
+                        >
+                case study
+        </Button>
+        } else {
+            caseStudyButton= <Button
+                            href={casestudy}
+                            target="_blank" 
+                            className="work-button"
+                            variant="outline-*" 
+                            size=""
+                            >
+                                case study
+                        </Button>
+        }
         return (
-            <Parallax bgImage="none" strength={-400}
-                renderLayer={precentage => (
-                    <div 
-                        style={{
-                            position: 'absolute',
-                            width: '3rem',
-                            height: '1rem',
-                            borderRadius: '0',
-                            background: '#90a88e',
-                            right: '0',
-                            bottom: '50',
-                            transform: `translate(-50%, -50%) scale(${precentage * 6})`,
-                        }}
-                    >
-                    </div>
-                )}
-                >
-                <Container className="work-container">
-                <Card className="home-content-card">                               
-                    <Card.Title as="h2" className="work-title mt-4"> 
-                        {title}
-                    </Card.Title>
-                    <div className="work-card-body d-flex justify-content-center align-items-center justify-content-md-end flex-md-row flex-column pt-5 pb-5">
-                        <Card.Body className="pl-md-0">
-                            <div className="h-100 d-flex align-items-center">
-                                <ul className="card-content-list pr-md-5">
-                                    <li className="">
-                                        <h4 className="card-content-list-item work-content">
-                                            {info}
-                                        </h4>
-                                    </li>
-                                </ul>
+                <Container>
+                    <Card className="home-content-card">
+                        <div className="d-flex justify-content-center">
+                            <Card.Title as="h2" className="work-title mt-5"> 
+                            {title}
+                            <h4 className="work-sub-title mt-3 ml-5" >&mdash;&nbsp;Built with {stack}</h4>
+                        </Card.Title>
+                        </div>
+                        <div className="work-card-body d-flex justify-content-center align-items-center flex-column mt-5">
+                            <Card.Body className="m-0 p-0">
+                                <div className="d-flex align-items-center">
+                                    <div className="card-content-list">
+                                            <h4 className="card-content-list-item work-content">
+                                                {info}
+                                            </h4>
+                                    </div>
+                                </div>
+                            </Card.Body>
+                            <Card.Img 
+                                src={img}
+                                className="work-image mt-5"
+                                alt={alt}
+                            />
+                        </div>
+                        <div className="my-5 d-flex justify-content-center">
+                                <div className="d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse card-content-list-item">
+                                    <Button
+                                        href={link}
+                                        target="_blank"
+                                        className="work-button"
+                                        variant="outline-*" 
+                                        size="">
+                                            site
+                                    </Button>
+                                    <Button
+                                        href={code}
+                                        target="_blank"
+                                        className="work-button mx-lg-5"
+                                        variant="outline-*" 
+                                        size="">
+                                            code
+                                    </Button>
+                                    { caseStudyButton }
+                                </div>
                             </div>
-                        </Card.Body>
-                                <Card.Img 
-                                    src={img}
-                                    className="work-image"
-                                    alt={alt}
-                                />
-                        
-                    </div>
-                    
-                    <div className="mt-3 work-button-group d-flex flex-column flex-md-row justify-content-lg-center align-items-md-center">
-                        <Button
-                            href={link}
-                            target="_blank"
-                            className="work-button"
-                            variant="outline-*" 
-                            size="">
-                                &mdash; site
-                        </Button>
-                        <Button
-                            href={code}
-                            target="_blank"
-                            className="work-button"
-                            variant="outline-*" 
-                            size="">
-                                &mdash; code
-                        </Button>
-                        <Button
-                            href={link}
-                            target="_blank"
-                            className="work-button"
-                            variant="outline-*" 
-                            size="">
-                                &mdash; case study
-                        </Button>
-                    </div>
-                
-                    
-                    
-                </Card>
-            </Container>
-            </Parallax>
-                
-            
+                    </Card>
+                </Container>
+        
         )
     }
 }
