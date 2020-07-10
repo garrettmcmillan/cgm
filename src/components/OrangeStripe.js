@@ -7,7 +7,7 @@ export default function OrangeStripe() {
             <div className="orange-stripe">
                 <div className="relative">
                     <ListGroup className="icon-list d-none d-lg-block ml-4">
-                        <ListGroup.Item className="footer-icon-list ">
+                        <ListGroup.Item className="footer-icon-list">
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/garrettmcmillan">
                                 <i className="footer-social-icon orange-stripe-list fab fa-github-square"></i>
                             </a>

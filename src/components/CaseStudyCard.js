@@ -11,12 +11,12 @@ export default class CaseStudyCard extends Component {
         const { title, img, sub, challenge, solution, result, alt, imgProcess, imgMobile } = this.props.project;
 
         return (
-                <Container>
+                <Container className="px-0 px-md-5">
                     <Card fluid className="home-content-card mb-5">
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center justify-content-md-start">
                             <Card.Title as="h2" className="work-title mt-5"> 
                                 {title}            
-                                <h4 className="work-sub-title mt-3 ml-5">&mdash;&nbsp;{sub}</h4>
+                                <h4 className="work-sub-title mt-3 ml-4 ml-md-5">&mdash;&nbsp;{sub}</h4>
                             </Card.Title>
                         </div>
                             

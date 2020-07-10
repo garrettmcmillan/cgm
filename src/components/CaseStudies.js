@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { caseStudies } from '../data'
+import Navigation from './Navbar'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import CaseStudyCard from './CaseStudyCard';
@@ -11,8 +12,9 @@ export default class CaseStudies extends Component {
             return <CaseStudyCard key={project.id} project={project}/>
         })
         return (
-            <div>
-                <Container className="home-container">
+            <React.Fragment>
+                <Navigation />
+                <Container className="px-0 px-md-5">
                     <Card className="home-content-card">
                         <Card.Body className="">
                             <Card.Title as="h1" className="home-title" >case<br/>studies</Card.Title>
@@ -21,10 +23,14 @@ export default class CaseStudies extends Component {
                         <div className="d-flex justify-content-end align-content-start mb-5">
                             <p className="card-line mb-5"></p>
                         </div>
-                        {work}
+                        <Container className="px-5">
+                            {work}
+                        </Container>
+                        
                     </Card>
                 </Container>
-            </div>
+            </React.Fragment>
+            
         )
     }
 }

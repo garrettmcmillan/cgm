@@ -52,6 +52,16 @@ h6 {
   color: inherit !important;
 }
 
+.about-nav {
+  font-size: 2rem;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid var(--primaryGreen);
+}
+.about-nav-item {
+  padding-right: 0 !important;
+  padding-left: 0;
+}
+
 .nav-item:hover {
   text-decoration: none;
   color: var(--primaryBlack);
@@ -69,7 +79,7 @@ h6 {
 
 .green-hover:hover {
   background-color: var(--primaryGreen);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 /* HOME */
@@ -82,11 +92,10 @@ h6 {
 .home-title {
   font-family: 'Rubik Mono One', sans-serif;
   width: fit-content;
-  line-height: 5rem;
+  line-height: 5.25rem;
   color: var(--primaryBlack);
   font-size: 6rem;
   margin: 0 0 1rem 0;
-  text-transform: capitalize;
 }
 
 .home-title-desc {
@@ -101,9 +110,21 @@ h6 {
   font-size: 1.25rem !important;
 }
 
+.home-image-div {
+  color: var(--primaryBlack);
+  background-color: var(--primaryOrange);
+}
+
 .home-image {
-  max-width: 24rem;
+  background-color: var(--primaryOrange);
+
+  max-width: 22rem;
   border-radius: 0;
+}
+
+.home-image:hover {
+  filter: opacity(75%) blur(2px);
+  transition: 1s ease-in-out;
 }
 
 .card-content-list {
@@ -116,29 +137,34 @@ h6 {
   letter-spacing: -0.1rem;
 }
 
+.about-nav {
+  width: fit-content;
+}
 a {
   text-decoration: none;
 }
 
-/* FOOTER */
+/* FOOTER + ORANGE*/
 
 .orange-stripe {
   background: var(--primaryOrange);
+  background: linear-gradient(
+    180deg,
+    rgba(252, 178, 68, 1) 0%,
+    rgba(252, 178, 68, 1) 75%,
+    rgba(201, 200, 164, 1) 100%
+  );
   width: 25%;
   height: 100%;
   position: fixed;
   padding-top: 3.5rem;
+  border: none !important;
 }
 
 .orange-stripe-list {
   color: var(--primaryBlack) !important;
+  text-align: center;
   border-radius: 0;
-  border-bottom: 3px solid transparent;
-}
-
-.orange-stripe-list:hover {
-  border-color: var(--primaryGreen) !important;
-  transition: all 0.2s ease-in-out;
 }
 
 .home-card-footer {
@@ -165,10 +191,13 @@ a {
   color: var(--primaryBlack);
   font-size: 2rem !important;
   border-bottom: 5px solid transparent;
+  width: 2.25rem;
 }
 
 .footer-social-icon:hover {
-  border-bottom: 5px solid var(--primaryGreen);
+  border-right: none;
+  border-bottom: 5px solid var(--primaryGreen) !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .footer-social-icon:active {
@@ -196,10 +225,10 @@ a {
 }
 
 .work-title {
-  line-height: 2.75rem;
+  line-height: 3rem;
   color: var(--primaryBlack) !important;
   font-size: 3rem !important;
-  max-width: 32rem;
+  max-width: 35rem;
 }
 
 .work-content {
@@ -222,7 +251,7 @@ a {
   font-weight: 400;
   font-size: 1.25rem !important;
   outline: none !important;
-  width: auto;
+  width: fit-content;
   padding: 0;
   text-align: left;
   color: var(--primaryBlack);
@@ -258,4 +287,85 @@ a {
   font-weight: 400;
   font-family: 'Montserrat', sans-serif !important;
   letter-spacing: -0.1rem;
+}
+
+/* RESUME */
+
+.resume-container {
+  width: 100%;
+}
+
+.resume-title {
+  font-family: 'Rubik Mono One', sans-serif;
+  line-height: 3.75rem;
+  color: var(--primaryBlack);
+  font-size: 4rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.resume-sub-title {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400;
+  padding-left: 3rem;
+  letter-spacing: -0.1rem;
+}
+
+.resume-info-title {
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+}
+
+.resume-info {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -0.04rem;
+  font-weight: 400;
+}
+
+.columns {
+  columns: 2;
+}
+
+.resume-list {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -0.04rem;
+  font-weight: 400;
+}
+.resume-list li {
+}
+
+.resume-list li::before {
+  content: '\2014\2009\2009\2009';
+  margin-left: 3rem;
+}
+
+.resume-list-sub {
+  font-size: 1.25rem;
+}
+
+/*MEDIA Q*/
+@media only screen and (max-width: 768px) {
+  .home-title {
+    font-size: 3.25rem !important;
+    line-height: 3rem !important;
+  }
+  .home-title-desc {
+    font-size: 1.25rem;
+  }
+  .nav-link {
+    font-size: 1.25rem !important;
+  }
+  .work-title {
+    font-size: 2rem !important;
+    line-height: 2rem;
+  }
+  .work-sub-title {
+    font-size: 1rem;
+  }
+  .work-content {
+    font-size: 1rem !important;
+  }
 }

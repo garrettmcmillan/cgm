@@ -35,12 +35,12 @@ export default class WorkCard extends Component {
                         </Button>
         }
         return (
-                <Container>
+                <Container className="px-0 px-md-5">
                     <Card className="home-content-card">
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center justify-content-md-start">
                             <Card.Title as="h2" className="work-title mt-5"> 
                             {title}
-                            <h4 className="work-sub-title mt-3 ml-5" >&mdash;&nbsp;Built with {stack}</h4>
+                            <h4 className="work-sub-title mt-3 ml-4 ml-md-5" >&mdash;&nbsp;Built with {stack}</h4>
                         </Card.Title>
                         </div>
                         <div className="work-card-body d-flex justify-content-center align-items-center flex-column mt-5">
@@ -60,7 +60,7 @@ export default class WorkCard extends Component {
                             />
                         </div>
                         <div className="my-5 d-flex justify-content-center">
-                                <div className="d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse card-content-list-item">
+                                <div className="d-flex flex-lg-row flex-column-reverse card-content-list-item">
                                     <Button
                                         href={link}
                                         target="_blank"

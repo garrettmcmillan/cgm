@@ -3,6 +3,7 @@ import { recentWork } from '../data'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import WorkCard from './WorkCard';
+import Navigation from './Navbar';
 
 
 export default class Work extends Component {
@@ -11,8 +12,9 @@ export default class Work extends Component {
             return <WorkCard key={project.id} project={project}/>
         })
         return (
-            <div>
-                <Container className="home-container">
+            <React.Fragment>
+                <Navigation/>
+                <Container className="px-0 px-md-5">
                     <Card className="home-content-card">
                         <Card.Body className="">
                             <Card.Title as="h1" className="home-title" >recent <br/> work</Card.Title>
@@ -21,10 +23,13 @@ export default class Work extends Component {
                         <div className="d-flex justify-content-end align-content-end mb-5">
                             <p className="card-line mb-5"></p>
                         </div>
-                        {work}
+                        <Container className="px-5">
+                            {work}
+                        </Container>
                     </Card>
                 </Container>
-            </div>
+            </React.Fragment>
+            
         )
     }
 } 
