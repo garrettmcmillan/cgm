@@ -345,7 +345,6 @@ a {
 .resume-list-sub {
   font-size: 1.25rem;
 }
-
 /*MEDIA Q*/
 @media only screen and (max-width: 768px) {
   .home-title {
