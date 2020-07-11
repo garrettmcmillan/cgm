@@ -172,7 +172,7 @@ a {
   background: none;
   border: none;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 3rem;
   padding: 0;
 }
