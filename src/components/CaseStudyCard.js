@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import { Parallax } from 'react-parallax';
-import Footer from './Footer';
 
 
 
@@ -12,11 +10,11 @@ export default class CaseStudyCard extends Component {
 
         return (
                 <Container className="px-0 px-md-5">
-                    <Card fluid className="home-content-card mb-5">
+                    <Card fluid="true" className="home-content-card mb-5">
                         <div className="d-flex justify-content-center justify-content-md-start">
                             <Card.Title as="h2" className="work-title mt-5"> 
                                 {title}            
-                                <h4 className="work-sub-title mt-3 ml-4 ml-md-5">&mdash;&nbsp;{sub}</h4>
+                                <span className="work-sub-title mt-3 ml-4 ml-md-5">&mdash;&nbsp;{sub}</span>
                             </Card.Title>
                         </div>
                             
@@ -30,7 +28,7 @@ export default class CaseStudyCard extends Component {
                                         </h4>
                                         <div className="case-study-image-main my-5">
                                             <Card.Img 
-                                                fluid
+                                                fluid="true"
                                                 src={img}
                                                 alt={alt}
                                                 className="case-study-image-main"
@@ -41,7 +39,7 @@ export default class CaseStudyCard extends Component {
                                             </h4>
                                         <div className="d-flex align-items-center flex-column my-5 py-5">
                                             <Card.Img 
-                                                fluid
+                                                fluid="true"
                                                 src={imgProcess}
                                                 className="case-study-image"
                                                 alt={alt}
@@ -52,7 +50,7 @@ export default class CaseStudyCard extends Component {
                                         </h4>
                                         <div className="d-flex justify-content-center mt-5 pt-5">
                                             <Card.Img 
-                                            fluid
+                                            fluid="true"
                                             src={imgMobile}
                                             className="case-study-image"
                                             alt={alt}

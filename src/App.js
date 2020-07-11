@@ -5,7 +5,6 @@ import OrangeStripe from './components/OrangeStripe';
 import About from './components/About';
 import Work from './components/Work';
 import CaseStudies from './components/CaseStudies';
-import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 /* CSS */

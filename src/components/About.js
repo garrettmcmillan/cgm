@@ -12,7 +12,7 @@ export default class About extends Component {
     render() {
         return (
                 <Container className="pt-5 pb-0">
-                    <Card fluid className=" home-content-card h-100 d-flex align-items-center mt-3 pb-0 ">
+                    <Card fluid="true" className=" home-content-card h-100 d-flex align-items-center mt-3 pb-0 ">
                         <Card.Body className="">
                             <Card.Title as="h1" className="home-title" >Garrett McMillan</Card.Title>
                             <Card.Title as="h2" className="home-title-desc mb-5">&mdash; Front-End Web Developer from Wilmington, NC</Card.Title>
@@ -39,7 +39,7 @@ export default class About extends Component {
                                 </Card.Body>
                                 <div className="home-image-div mr-md-5 mt-5 mt-md-0 justify-content-center align-items-center">
                                     <Card.Img 
-                                        fluid
+                                        fluid="true"
                                         className="home-image"
                                         src={PortfolioHeadshot}
                                         alt="garrett mcmillan headshot"/>

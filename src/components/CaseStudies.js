@@ -25,8 +25,7 @@ export default class CaseStudies extends Component {
                         </div>
                         <Container className="px-5">
                             {work}
-                        </Container>
-                        
+                        </Container>                      
                     </Card>
                 </Container>
             </React.Fragment>

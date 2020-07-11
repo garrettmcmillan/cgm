@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import Footer from './Footer';
 
 
 
@@ -54,6 +53,7 @@ export default class WorkCard extends Component {
                                 </div>
                             </Card.Body>
                             <Card.Img 
+                                fluid="true"
                                 src={img}
                                 className="work-image mt-5"
                                 alt={alt}
