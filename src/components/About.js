@@ -14,10 +14,10 @@ export default class About extends Component {
                 <Container className="pt-5 pb-0">
                     <Card fluid="true" className=" home-content-card h-100 d-flex align-items-center mt-3 pb-0 ">
                         <Card.Body className="">
-                            <Card.Title as="h1" className="home-title" >Garrett McMillan</Card.Title>
+                            <Card.Title as="h1" className="home-title" >Garrett McM<span className="title-kerning">il</span>lan</Card.Title>
                             <Card.Title as="h2" className="home-title-desc mb-5">&mdash; Front-End Web Developer from Wilmington, NC</Card.Title>
                             
-                            <div className="home-card-body d-flex flex-column align-items-center flex-md-row pr-md-5 ">
+                            <div className="home-card-body d-flex flex-column align-items-center flex-md-row pr-md-5">
                                 <Card.Body className="p-0">
                                     <Nav as="ul" className="about-nav pt-md-0 mt-md-0 mb-md-5 mr-md-5 navbar-div d-flex justify-content-left flex-md-column px-md-5">
                                         <Nav.Item  className="nav-item about-nav-item">

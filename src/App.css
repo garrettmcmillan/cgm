@@ -97,7 +97,9 @@ h6 {
   font-size: 6rem;
   margin: 0 0 1rem 0;
 }
-
+.title-kerning {
+  letter-spacing: -0.8rem;
+}
 .home-title-desc {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 400;
@@ -380,5 +382,8 @@ a {
   .navbar-menu-title {
     font-size: 1.25rem;
     letter-spacing: -0.15rem;
+  }
+  .title-kerning {
+    letter-spacing: -0.5rem;
   }
 }
