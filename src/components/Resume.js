@@ -13,7 +13,7 @@ export default class Work extends Component {
                     <Card className="home-content-card pt-3">
                         <Card.Body className="d-flex flex-column p-0">
                             <Card.Title as="h1" className="resume-title mb-2" >
-                                Garrett <br/> McMillan
+                                Garrett <br/> McM<span className="resume-title-kerning">il</span>lan
                             </Card.Title>
                             <Card.Title as="h2" className="resume-sub-title">
                                 &mdash; Front-End Web Developer and Project Manager from Wilmington, NC
