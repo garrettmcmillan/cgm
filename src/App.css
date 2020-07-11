@@ -359,6 +359,7 @@ a {
   .work-title {
     font-size: 2rem !important;
     line-height: 2rem;
+    letter-spacing: -0.075rem;
   }
   .work-sub-title {
     font-size: 1rem !important;
