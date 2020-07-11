@@ -17,7 +17,7 @@ export default class Navigation extends Component {
                     aria-controls="basic-navbar-nav"
                     onClick={this.setNavExpanded}
                 >
-                    <div className="navbar-div d-flex align-items-center justify-content-center"><span>&mdash;&nbsp;Menu&nbsp;&nbsp;</span>
+                    <div className="navbar-div d-flex align-items-center justify-content-center"><span className="navbar-menu-title">&mdash;&nbsp;Menu&nbsp;&nbsp;</span>
                         <NavIcon />
                     </div>
                 </Navbar.Toggle>

@@ -14,7 +14,7 @@ export default class CaseStudyCard extends Component {
                         <div className="d-flex justify-content-center justify-content-md-start">
                             <Card.Title as="h2" className="work-title mt-5"> 
                                 {title}            
-                                <span className="work-sub-title mt-3 ml-4 ml-md-5">&mdash;&nbsp;{sub}</span>
+                                <p className="work-sub-title ml-4 ml-md-5">&mdash;&nbsp;{sub}</p>
                             </Card.Title>
                         </div>
                             

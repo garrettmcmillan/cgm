@@ -250,6 +250,7 @@ a {
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1.25rem !important;
+  letter-spacing: -0.1rem;
   outline: none !important;
   width: fit-content;
   padding: 0;
@@ -278,8 +279,6 @@ a {
 
 .case-study-image {
   max-width: 30rem;
-
-  max-height: 50rem;
   border-radius: 0;
 }
 
@@ -334,8 +333,6 @@ a {
   letter-spacing: -0.04rem;
   font-weight: 400;
 }
-.resume-list li {
-}
 
 .resume-list li::before {
   content: '\2014\2009\2009\2009';
@@ -362,9 +359,22 @@ a {
     line-height: 2rem;
   }
   .work-sub-title {
-    font-size: 1rem;
+    font-size: 1rem !important;
+    letter-spacing: -0.075rem;
   }
   .work-content {
     font-size: 1rem !important;
+    letter-spacing: -0.075rem;
+  }
+  .work-button {
+    font-size: 1rem !important;
+    letter-spacing: -0.075rem;
+  }
+  .work-button::before {
+    content: '\2014\2009\2009\2009\2009';
+  }
+  .navbar-menu-title {
+    font-size: 1.25rem;
+    letter-spacing: -0.15rem;
   }
 }
