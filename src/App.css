@@ -117,7 +117,6 @@ h6 {
 
 .home-image {
   background-color: var(--primaryOrange);
-
   max-width: 22rem;
   border-radius: 0;
 }
@@ -278,7 +277,8 @@ a {
 }
 
 .case-study-image {
-  max-width: 30rem;
+  max-width: 450px;
+  height: 675px;
   border-radius: 0;
 }
 
@@ -372,6 +372,10 @@ a {
   }
   .work-button::before {
     content: '\2014\2009\2009\2009\2009';
+  }
+  .case-study-image {
+    max-width: 400px !important;
+    height: 600px !important;
   }
   .navbar-menu-title {
     font-size: 1.25rem;
