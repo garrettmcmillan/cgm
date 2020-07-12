@@ -5,16 +5,14 @@ import Button from 'react-bootstrap/Button';
 
 
 
-
 export default class WorkCard extends Component {
     render() {
-        const { title, link, img, info, alt, code, casestudy, stack } = this.props.project;
-        
+        const { id, title, link, img, info, alt, code, casestudy, stack } = this.props.project;
         const caseStudyStatus = this.props.project.casestudy;
         let caseStudyButton;
         if (caseStudyStatus === null) {
             caseStudyButton = <Button
-                                href={casestudy}
+                                href="/studies"
                                 target="_blank" 
                                 className="work-button d-none"
                                 variant="outline-*" 
@@ -24,11 +22,11 @@ export default class WorkCard extends Component {
         </Button>
         } else {
             caseStudyButton= <Button
-                            href={casestudy}
-                            target="_blank" 
-                            className="work-button"
-                            variant="outline-*" 
-                            size=""
+                                href="/studies"
+                                target="_blank" 
+                                className="work-button"
+                                variant="outline-*" 
+                                size=""
                             >
                                 case study
                         </Button>

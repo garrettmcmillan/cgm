@@ -6,19 +6,17 @@ import Container from 'react-bootstrap/Container';
 
 export default class CaseStudyCard extends Component {
     render() {
-        const { title, img, sub, challenge, solution, result, alt, imgProcess, imgMobile } = this.props.project;
+        const { id, title, img, sub, challenge, solution, result, alt, imgProcess, imgMobile } = this.props.project;
 
         return (
                 <Container className="px-0 px-md-5">
                     <Card fluid="true" className="home-content-card mb-5">
                         <div className="d-flex justify-content-center justify-content-md-start">
-                            <Card.Title as="h2" className="work-title mt-5"> 
+                            <Card.Title as="h2" id={id} className="work-title mt-5"> 
                                 {title}            
                                 <p className="work-sub-title ml-4 ml-md-5">&mdash;&nbsp;{sub}</p>
                             </Card.Title>
                         </div>
-                            
-                        
                         <div className="work-card-body text-justify d-flex justify-content-center align-items-center justify-content-md-end flex-md-row mt-5">
                             <Card.Body className="m-0 p-0 mb-lg-5">
                                 <div className="d-flex justify-content-center align-items-center">
