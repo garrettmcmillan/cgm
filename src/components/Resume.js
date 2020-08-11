@@ -9,21 +9,32 @@ export default class Work extends Component {
         return (
             <React.Fragment>
             <Navigation/>
-            <div className="resume-container d-flex flex-column justify-content-center align-items-center mx-0 pt-4">
+            <div className="resume-container d-flex flex-column justify-content-center align-items-center mx-0 pt-5">
                     <Card className="home-content-card pt-3">
-                        <Card.Body className="d-flex flex-column p-0">
-                            <Card.Title as="h1" className="resume-title mb-2" >
+                        <Card.Body className="d-flex flex-row p-0">
+                            <div>
+                                <Card.Title as="h1" className="resume-title mb-2" >
                                 Garrett <br/> McM<span className="resume-title-kerning">il</span>lan
                             </Card.Title>
                             <Card.Title as="h2" className="resume-sub-title">
                                 &mdash; Front-End Web Developer and Project Manager from Wilmington, NC
                             </Card.Title>
-                            
+                            </div>
+                            <div className="pt-4 mt-3">
+                                <Card.Title className="d-flex flex-column resume-list justify-content-end align-items-end pr-0">
+                                    <p className="mt-0 mb-1">
+                                        cgarrettmcmillan@gmail.com 
+                                    </p>
+                                    <p className="my-0">
+                                        910.524.0996
+                                    </p>
+                                </Card.Title>
+                            </div>
                         </Card.Body>
                         <Container className="p-0">
                         <Card.Body className="p-0">
                         
-                        <div className="d-flex text-justify my-3">
+                        <div className="d-flex text-justify my-3 resume-list px-5">
                             Self-taught and hardworking web designer who is passionate about creating beautiful and effective user experiences. I ensure positive website outcomes by utilizing my dynamic technical, communication, and design skills to propel both clients and team into the future. Through understanding key client information and developing innovative design solutions, I will guarantee the success of all objectives entrusted to me.
                         </div>
                         <div className="d-flex flex-md-row flex-column align-items-center">
