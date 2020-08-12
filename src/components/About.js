@@ -28,7 +28,7 @@ export default class About extends Component {
                                                 <Dropdown.Menu className="nav-dropdown">
                                                     <Dropdown.Item as={Link} to="/recent" className="nav-item-link nav-dropdown-item green-hover js-scroll-trigger" >Recent Work</Dropdown.Item>
                                                     <Dropdown.Item as={Link} to="/studies" className="nav-item-link nav-dropdown-item green-hover js-scroll-trigger" >Case Studies</Dropdown.Item>
-                                                    <Dropdown.Item as='a' href={ResumePDF} target="_blank" rel="noopener noreferrer" className="nav-item-link nav-dropdown-item green-hover js-scroll-trigger">Resume &nbsp; (&nbsp;<i className="fas fa-file-download download-icon"></i>&nbsp;)</Dropdown.Item>
+                                                    <Dropdown.Item as='a' href={ ResumePDF } target="_blank" rel="noopener noreferrer" className="nav-item-link nav-dropdown-item green-hover js-scroll-trigger">Resume &nbsp; (&nbsp;<i className="fas fa-file-download download-icon"></i>&nbsp;)</Dropdown.Item>
                                                 </Dropdown.Menu>
                                         </Dropdown>
                                         <Nav.Item className="nav-item about-nav-item">
