@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 export default class WorkCard extends Component {
     render() {
-        const { id, title, link, img, info, alt, code, casestudy, stack } = this.props.project;
+        const { title, link, img, info, alt, code, stack } = this.props.project;
         const caseStudyStatus = this.props.project.casestudy;
         let caseStudyButton;
         if (caseStudyStatus === null) {
