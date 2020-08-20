@@ -20,10 +20,13 @@ export default class Work extends Component {
                                 &mdash; Front-End Web Developer and Project Manager from Wilmington, NC
                             </Card.Title>
                             </div>
-                            <div className="pt-4 mt-3">
+                            <div className="pt-4 mt-1">
                                 <Card.Title className="d-flex flex-column resume-list justify-content-end align-items-end pr-0">
-                                    <p className="mt-0 mb-1">
-                                        cgarrettmcmillan@gmail.com 
+                                <p className="my-0">
+                                    garrettmcmillan.netlify.app
+                                    </p>
+                                    <p className="mt-1 mb-1">
+                                        cgarrettmcmillan@gmail.com
                                     </p>
                                     <p className="my-0">
                                         910.524.0996
